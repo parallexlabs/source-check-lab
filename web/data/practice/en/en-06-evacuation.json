@@ -1,0 +1,110 @@
+{
+  "id": "en-06-evacuation",
+  "language": "en",
+  "synthetic": true,
+  "title": "Evacuation coordination update",
+  "kitRef": "case-studies/01-evacuation-sms-translation",
+  "documents": [
+    {
+      "id": "ops",
+      "type": "situation_report",
+      "title": "Operations cell update (SYNTHETIC)",
+      "synthetic": true,
+      "content": "14:00 on 5 May 2026: Evacuation buses departed Sycamore Camp for Northhaven Transit Centre. 612 passengers boarded across 6 buses. Northhaven Transit Centre capacity is 800 places. SMS alert text approved in English and French; translation of route details is pending verification by community volunteers."
+    }
+  ],
+  "summary": "At 15:00 on 5 May 2026, 612 people boarded 6 buses from Sycamore Camp to Southhaven Transit Centre. The transit centre has capacity for 800 people. French SMS translations were verified before sending.",
+  "claims": [
+    {
+      "id": "c1",
+      "text": "612 people boarded 6 buses from Sycamore Camp.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "ops:s1"
+        ],
+        "explanation": "Passenger and bus counts match.",
+        "evidence": "612"
+      }
+    },
+    {
+      "id": "c2",
+      "text": "Departure was at 15:00 on 5 May 2026.",
+      "answerKey": {
+        "verdict": "contradicted",
+        "errorType": "wrong_date_time",
+        "sourceSentences": [
+          "ops:s0"
+        ],
+        "explanation": "Source states 14:00, not 15:00.",
+        "evidence": "14:00"
+      }
+    },
+    {
+      "id": "c3",
+      "text": "Buses went to Southhaven Transit Centre.",
+      "answerKey": {
+        "verdict": "contradicted",
+        "errorType": "wrong_place_actor",
+        "sourceSentences": [
+          "ops:s0"
+        ],
+        "explanation": "Destination is Northhaven Transit Centre.",
+        "evidence": "Northhaven"
+      }
+    },
+    {
+      "id": "c4",
+      "text": "Transit centre capacity is 800 places.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "ops:s2"
+        ],
+        "explanation": "Capacity figure matches.",
+        "evidence": "800"
+      }
+    },
+    {
+      "id": "c5",
+      "text": "French SMS translations were verified before sending.",
+      "answerKey": {
+        "verdict": "contradicted",
+        "errorType": "omitted_caveat",
+        "sourceSentences": [
+          "ops:s3"
+        ],
+        "explanation": "Translation pending verification per source.",
+        "evidence": "pending verification"
+      }
+    },
+    {
+      "id": "c6",
+      "text": "Evacuation used six buses.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "ops:s1"
+        ],
+        "explanation": "Bus count matches.",
+        "evidence": "6 buses"
+      }
+    },
+    {
+      "id": "c7",
+      "text": "SMS alerts were approved in English and French.",
+      "answerKey": {
+        "verdict": "partly_supported",
+        "errorType": null,
+        "sourceSentences": [
+          "ops:s3"
+        ],
+        "explanation": "English and French mentioned; route translation still pending.",
+        "evidence": "English and French"
+      }
+    }
+  ]
+}

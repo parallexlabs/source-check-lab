@@ -1,0 +1,111 @@
+{
+  "id": "en-04-distribution",
+  "language": "en",
+  "synthetic": true,
+  "title": "Food distribution log review",
+  "kitRef": "session-02-verified-work",
+  "documents": [
+    {
+      "id": "distlog",
+      "type": "distribution_log",
+      "title": "Distribution log: Sector 7 (SYNTHETIC)",
+      "synthetic": true,
+      "content": "15 August 2026: 850 household ration cards verified. 820 household food parcels issued at Greybrook Site. Average parcel: 25 kg rice per household per month. Partner staff noted 30 cards could not be verified due to missing ID."
+    }
+  ],
+  "summary": "On 15 August 2026, 820 food parcels were issued to 820 individuals at Greybrook Site. Each person received 25 kg of rice per week. All ration cards were verified successfully.",
+  "claims": [
+    {
+      "id": "c1",
+      "text": "820 food parcels were issued at Greybrook Site on 15 August 2026.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "distlog:s1"
+        ],
+        "explanation": "Date, site and parcel count match log.",
+        "evidence": "820"
+      }
+    },
+    {
+      "id": "c2",
+      "text": "Parcels went to 820 individuals.",
+      "answerKey": {
+        "verdict": "contradicted",
+        "errorType": "unit_confusion",
+        "sourceSentences": [
+          "distlog:s1"
+        ],
+        "explanation": "Log counts household parcels, not individuals.",
+        "evidence": "household"
+      }
+    },
+    {
+      "id": "c3",
+      "text": "Each person received 25 kg of rice per week.",
+      "answerKey": {
+        "verdict": "contradicted",
+        "errorType": "unit_confusion",
+        "sourceSentences": [
+          "distlog:s2"
+        ],
+        "explanation": "Source states 25 kg per household per month.",
+        "evidence": "per month"
+      }
+    },
+    {
+      "id": "c4",
+      "text": "850 household ration cards were verified.",
+      "answerKey": {
+        "verdict": "partly_supported",
+        "errorType": null,
+        "sourceSentences": [
+          "distlog:s0",
+          "distlog:s3"
+        ],
+        "explanation": "850 cards verified is stated; 30 could not be verified is omitted.",
+        "evidence": "850"
+      }
+    },
+    {
+      "id": "c5",
+      "text": "All ration cards were verified successfully.",
+      "answerKey": {
+        "verdict": "contradicted",
+        "errorType": "omitted_caveat",
+        "sourceSentences": [
+          "distlog:s3"
+        ],
+        "explanation": "Source notes 30 cards could not be verified.",
+        "evidence": "30 cards"
+      }
+    },
+    {
+      "id": "c6",
+      "text": "Distribution took place at Greybrook Site.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "distlog:s1"
+        ],
+        "explanation": "Site name matches.",
+        "evidence": "Greybrook"
+      }
+    },
+    {
+      "id": "c7",
+      "text": "Average ration was 25 kg rice per household monthly.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "distlog:s2"
+        ],
+        "explanation": "Accurate paraphrase of ration size.",
+        "evidence": "25 kg"
+      }
+    }
+  ]
+}

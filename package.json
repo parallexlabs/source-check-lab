@@ -1,0 +1,26 @@
+{
+  "name": "source-check-lab",
+  "version": "1.0.0",
+  "description": "ParalleX practice lab for verifying AI summaries against humanitarian sources",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "test": "node --test --experimental-test-coverage --test-reporter=spec --test-reporter-destination=stdout tests/*.test.mjs",
+    "test:browser": "npx playwright install chromium && node --test tests/browser/**/*.test.mjs",
+    "test:model": "RUN_MODEL_TESTS=1 node --test tests/model/**/*.test.mjs && RUN_MODEL_TESTS=1 node --test tests/browser/**/*.test.mjs",
+    "lint": "eslint .",
+    "check:site": "node scripts/check_site.mjs",
+    "eval": "node scripts/eval.mjs",
+    "eval:model": "node scripts/eval.mjs --with-model",
+    "validate:citations": "node scripts/validate-citations.mjs"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.39.1",
+    "@huggingface/transformers": "4.3.0",
+    "eslint": "9.39.1",
+    "playwright": "1.55.1"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "id": "fr-03-sitrep",
+  "language": "fr",
+  "synthetic": true,
+  "sourcesDisagree": true,
+  "title": "Extrait de rapport de situation inondation",
+  "kitRef": "session-02-verified-work",
+  "documents": [
+    {
+      "id": "sitrep",
+      "type": "situation_report",
+      "title": "SitRep n° 14 : Brookvale (SYNTHÉTIQUE)",
+      "synthetic": true,
+      "content": "Au 22 septembre 2026, environ 4 000 personnes sont déplacées dans les camps A et B près de la ville de Brookvale. Le camp A accueille environ 2 100 personnes; le camp B environ 1 900. La mairie a indiqué que le pont principal pourrait rouvrir d'ici le 30 septembre si les niveaux d'eau continuent de baisser. Le cluster WASH note un risque élevé de choléra mais aucun cas confirmé au 21 septembre."
+    },
+    {
+      "id": "wash",
+      "type": "cluster_update",
+      "title": "Note cluster WASH (SYNTHÉTIQUE)",
+      "synthetic": true,
+      "content": "Les partenaires WASH ont livré 12 000 litres d'eau traitée au camp A le 20 septembre. Le camp B a reçu 8 500 litres le même jour. Les besoins restent élevés sur les deux sites."
+    },
+    {
+      "id": "eval",
+      "type": "rapid_assessment",
+      "title": "Note d'évaluation rapide : Brookvale (SYNTHÉTIQUE)",
+      "synthetic": true,
+      "content": "Équipe d'évaluation, 22 septembre 2026 : environ 5 100 personnes déplacées observées dans les camps A et B près de Brookvale. Méthode : dénombrements aux points de service, pas une enquête ménage. Chiffres préliminaires."
+    }
+  ],
+  "summary": "Le 23 septembre 2026, environ 4 650 personnes déplacées sont dans des camps près de Brookvale. Le camp A a reçu 12 000 litres d'eau par semaine et le camp B 8 500 litres par semaine. Le pont principal rouvrira le 30 septembre. Des cas de choléra sont confirmés au camp A.",
+  "claims": [
+    {
+      "id": "c1",
+      "text": "Environ 4 650 personnes déplacées sont dans des camps près de Brookvale.",
+      "answerKey": {
+        "verdict": "sources_disagree",
+        "errorType": "sources_disagree",
+        "sourceSentences": [
+          "sitrep:s0",
+          "eval:s0"
+        ],
+        "explanation": "Le SitRep estime 4 000; l'évaluation rapide indique environ 5 100. Noter la divergence et comparer les méthodes plutôt que choisir un chiffre.",
+        "evidence": "déplacées"
+      }
+    },
+    {
+      "id": "c2",
+      "text": "Le rapport est daté du 23 septembre 2026.",
+      "answerKey": {
+        "verdict": "contradicted",
+        "errorType": "wrong_date_time",
+        "sourceSentences": [
+          "sitrep:s0"
+        ],
+        "explanation": "Le SitRep est au 22 septembre.",
+        "evidence": "22 septembre"
+      }
+    },
+    {
+      "id": "c3",
+      "text": "Le camp A a reçu 12 000 litres d'eau par semaine.",
+      "answerKey": {
+        "verdict": "contradicted",
+        "errorType": "unit_confusion",
+        "sourceSentences": [
+          "wash:s0"
+        ],
+        "explanation": "Livraison ponctuelle le 20 septembre, pas par semaine.",
+        "evidence": "12 000"
+      }
+    },
+    {
+      "id": "c4",
+      "text": "Le camp B a reçu 8 500 litres le 20 septembre.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "wash:s1"
+        ],
+        "explanation": "Correspond à la note WASH.",
+        "evidence": "8 500"
+      }
+    },
+    {
+      "id": "c5",
+      "text": "Le pont principal rouvrira le 30 septembre.",
+      "answerKey": {
+        "verdict": "partly_supported",
+        "errorType": "lost_uncertainty",
+        "sourceSentences": [
+          "sitrep:s2"
+        ],
+        "explanation": "Pourrait rouvrir si les niveaux baissent; pas certain.",
+        "evidence": "pourrait rouvrir"
+      }
+    },
+    {
+      "id": "c6",
+      "text": "Des cas de choléra sont confirmés au camp A.",
+      "answerKey": {
+        "verdict": "contradicted",
+        "errorType": "contradiction",
+        "sourceSentences": [
+          "sitrep:s3"
+        ],
+        "explanation": "Aucun cas confirmé selon la source.",
+        "evidence": "aucun cas confirmé"
+      }
+    },
+    {
+      "id": "c7",
+      "text": "Le camp A accueille environ 2 100 personnes.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "sitrep:s1"
+        ],
+        "explanation": "Chiffre direct.",
+        "evidence": "2 100"
+      }
+    },
+    {
+      "id": "c8",
+      "text": "Les besoins WASH restent élevés aux deux camps.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "wash:s2"
+        ],
+        "explanation": "Énoncé dans la note cluster.",
+        "evidence": "élevés"
+      }
+    },
+    {
+      "id": "c9",
+      "text": "Le cluster WASH a indiqué que « le choléra est sous contrôle ».",
+      "answerKey": {
+        "verdict": "not_in_source",
+        "errorType": "invented_quotation",
+        "sourceSentences": [],
+        "explanation": "La citation est absente; la source note un risque élevé sans cas confirmés.",
+        "absentEvidence": "sous contrôle"
+      }
+    }
+  ]
+}

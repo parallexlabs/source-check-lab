@@ -1,0 +1,127 @@
+{
+  "id": "en-05-health-protection",
+  "language": "en",
+  "synthetic": true,
+  "title": "Health post note and partner meeting",
+  "kitRef": "case-studies/04-protection-case-note",
+  "documents": [
+    {
+      "id": "health",
+      "type": "health_post_note",
+      "title": "Health post weekly note (SYNTHETIC)",
+      "synthetic": true,
+      "content": "Week of 10 June 2026: Health post at Torvale recorded 45 consultations for acute respiratory infection among children under five. One referral to district hospital. Stock-out of amoxicillin syrup noted on 14 June."
+    },
+    {
+      "id": "meeting",
+      "type": "partner_meeting_notes",
+      "title": "Partner coordination notes (SYNTHETIC)",
+      "synthetic": true,
+      "content": "Protection working group, 12 June 2026: Haven Collective shared that safe spaces in Torvale remain open three days per week. Border Relief League reported a pending assessment for Ashford only."
+    }
+  ],
+  "summary": "During the week of 10 June 2026, Torvale health post saw 45 child ARI consultations with multiple hospital referrals. Haven Collective stated that \"all safe spaces are open daily across the district.\" Amoxicillin syrup was available throughout the week.",
+  "claims": [
+    {
+      "id": "c1",
+      "text": "Torvale health post recorded 45 child ARI consultations.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "health:s0"
+        ],
+        "explanation": "Matches health post note.",
+        "evidence": "45"
+      }
+    },
+    {
+      "id": "c2",
+      "text": "There were multiple hospital referrals.",
+      "answerKey": {
+        "verdict": "contradicted",
+        "errorType": "wrong_number",
+        "sourceSentences": [
+          "health:s1"
+        ],
+        "explanation": "Source records one referral, not multiple.",
+        "evidence": "One referral"
+      }
+    },
+    {
+      "id": "c3",
+      "text": "Haven Collective stated that all safe spaces are open daily across the district.",
+      "answerKey": {
+        "verdict": "contradicted",
+        "errorType": "invented_quotation",
+        "sourceSentences": [
+          "meeting:s0"
+        ],
+        "explanation": "Quoted wording and scope do not appear; source says three days per week in Torvale.",
+        "evidence": "three days"
+      }
+    },
+    {
+      "id": "c4",
+      "text": "Safe spaces in Torvale operate three days per week.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "meeting:s0"
+        ],
+        "explanation": "Matches partner notes.",
+        "evidence": "three days"
+      }
+    },
+    {
+      "id": "c5",
+      "text": "Amoxicillin syrup was available throughout the week.",
+      "answerKey": {
+        "verdict": "contradicted",
+        "errorType": "contradiction",
+        "sourceSentences": [
+          "health:s2"
+        ],
+        "explanation": "Stock-out noted on 14 June.",
+        "evidence": "Stock-out"
+      }
+    },
+    {
+      "id": "c6",
+      "text": "Border Relief League is assessing Ashford.",
+      "answerKey": {
+        "verdict": "partly_supported",
+        "errorType": null,
+        "sourceSentences": [
+          "meeting:s1"
+        ],
+        "explanation": "Pending assessment reported; details limited.",
+        "evidence": "Ashford"
+      }
+    },
+    {
+      "id": "c7",
+      "text": "Safe spaces operate across all villages in the district.",
+      "answerKey": {
+        "verdict": "not_in_source",
+        "errorType": "overgeneralization",
+        "sourceSentences": [],
+        "explanation": "Source mentions Torvale and L only, not all villages."
+      }
+    },
+    {
+      "id": "c8",
+      "text": "A stock-out of amoxicillin syrup occurred on 14 June.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "health:s2"
+        ],
+        "explanation": "Directly stated.",
+        "evidence": "14 June"
+      }
+    }
+  ]
+}

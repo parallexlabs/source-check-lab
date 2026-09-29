@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "generated": "2026-09-29",
+  "sets": [
+    {
+      "id": "en-01-needs-assessment",
+      "language": "en",
+      "path": "practice/en/en-01-needs-assessment.json",
+      "title": "Rapid needs assessment summary"
+    },
+    {
+      "id": "en-02-donor-report",
+      "language": "en",
+      "path": "practice/en/en-02-donor-report.json",
+      "title": "Quarterly donor narrative (clean summary)"
+    },
+    {
+      "id": "en-03-sitrep",
+      "language": "en",
+      "path": "practice/en/en-03-sitrep.json",
+      "title": "Flood situation report excerpt"
+    },
+    {
+      "id": "en-04-distribution",
+      "language": "en",
+      "path": "practice/en/en-04-distribution.json",
+      "title": "Food distribution log review"
+    },
+    {
+      "id": "en-05-health-protection",
+      "language": "en",
+      "path": "practice/en/en-05-health-protection.json",
+      "title": "Health post note and partner meeting"
+    },
+    {
+      "id": "en-06-evacuation",
+      "language": "en",
+      "path": "practice/en/en-06-evacuation.json",
+      "title": "Evacuation coordination update"
+    },
+    {
+      "id": "fr-01-evaluation-besoins",
+      "language": "fr",
+      "path": "practice/fr/fr-01-evaluation-besoins.json",
+      "title": "Synthèse d'évaluation rapide des besoins"
+    },
+    {
+      "id": "fr-02-rapport-bailleur",
+      "language": "fr",
+      "path": "practice/fr/fr-02-rapport-bailleur.json",
+      "title": "Rapport trimestriel au bailleur (résumé correct)"
+    },
+    {
+      "id": "fr-03-sitrep",
+      "language": "fr",
+      "path": "practice/fr/fr-03-sitrep.json",
+      "title": "Extrait de rapport de situation inondation"
+    },
+    {
+      "id": "fr-04-distribution",
+      "language": "fr",
+      "path": "practice/fr/fr-04-distribution.json",
+      "title": "Revue du registre de distribution alimentaire"
+    },
+    {
+      "id": "fr-05-sante-protection",
+      "language": "fr",
+      "path": "practice/fr/fr-05-sante-protection.json",
+      "title": "Note de poste de santé et réunion partenaires"
+    },
+    {
+      "id": "fr-06-evacuation",
+      "language": "fr",
+      "path": "practice/fr/fr-06-evacuation.json",
+      "title": "Mise à jour coordination évacuation"
+    },
+    {
+      "id": "en-07-cross-fr",
+      "language": "en",
+      "path": "practice/en/en-07-cross-fr.json",
+      "title": "French source with English summary"
+    },
+    {
+      "id": "fr-07-cross-en",
+      "language": "fr",
+      "path": "practice/fr/fr-07-cross-en.json",
+      "title": "Source anglaise avec résumé français"
+    }
+  ]
+}

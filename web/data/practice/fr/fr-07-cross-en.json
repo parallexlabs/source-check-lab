@@ -1,0 +1,124 @@
+{
+  "id": "fr-07-cross-en",
+  "language": "fr",
+  "synthetic": true,
+  "crossLanguage": {
+    "sourceLang": "en",
+    "summaryLang": "fr"
+  },
+  "title": "Source anglaise avec résumé français",
+  "kitRef": "session-02-verified-work",
+  "documents": [
+    {
+      "id": "log",
+      "type": "distribution_log",
+      "title": "Shelter distribution log : Fictive Sector (SYNTHETIC)",
+      "synthetic": true,
+      "content": "12 July 2026: 420 emergency shelter kits issued at Greybrook Site. 415 kits went to registered households; 5 kits held for verification. Average kit weight: 18 kg. Partner: Brookvale Relief Cooperative."
+    }
+  ],
+  "summary": "Le 12 juillet 2026, 420 kits d'abri d'urgence ont été distribués au site Greybrook. 415 kits ont été remis à des ménages enregistrés; 5 kits sont en attente de vérification. Poids moyen du kit : 18 kg. Partenaire : Coopérative Brookvale.",
+  "claims": [
+    {
+      "id": "c1",
+      "text": "420 kits d'abri d'urgence ont été distribués au site Greybrook le 12 juillet 2026.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "log:s0"
+        ],
+        "explanation": "Date, site et quantité correspondent à la source anglaise.",
+        "evidence": "420"
+      }
+    },
+    {
+      "id": "c2",
+      "text": "415 kits ont été remis à des ménages enregistrés.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "log:s1"
+        ],
+        "explanation": "Chiffre confirmé.",
+        "evidence": "415"
+      }
+    },
+    {
+      "id": "c3",
+      "text": "5 kits sont en attente de vérification.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "log:s1"
+        ],
+        "explanation": "Correspond à held for verification.",
+        "evidence": "5 kits"
+      }
+    },
+    {
+      "id": "c4",
+      "text": "Le poids moyen du kit est de 18 kg.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "log:s2"
+        ],
+        "explanation": "Poids confirmé.",
+        "evidence": "18 kg"
+      }
+    },
+    {
+      "id": "c5",
+      "text": "La Coopérative Brookvale était le partenaire.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "log:s3"
+        ],
+        "explanation": "Nom du partenaire correspond.",
+        "evidence": "Brookvale Relief"
+      }
+    },
+    {
+      "id": "c6",
+      "text": "520 kits ont été distribués.",
+      "answerKey": {
+        "verdict": "contradicted",
+        "errorType": "wrong_number",
+        "sourceSentences": [
+          "log:s0"
+        ],
+        "explanation": "La source indique 420 kits.",
+        "evidence": "420"
+      }
+    },
+    {
+      "id": "c7",
+      "text": "Le partenaire était l'Alliance Brookvale.",
+      "answerKey": {
+        "verdict": "contradicted",
+        "errorType": "wrong_place_actor",
+        "sourceSentences": [
+          "log:s3"
+        ],
+        "explanation": "La source nomme Brookvale Relief Cooperative.",
+        "evidence": "Brookvale Relief"
+      }
+    },
+    {
+      "id": "c8",
+      "text": "Des tentes supplémentaires ont été livrées au site voisin.",
+      "answerKey": {
+        "verdict": "not_in_source",
+        "errorType": "not_in_source",
+        "sourceSentences": [],
+        "explanation": "Aucune mention de site voisin ou de tentes dans la source."
+      }
+    }
+  ]
+}

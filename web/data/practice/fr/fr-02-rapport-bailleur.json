@@ -1,0 +1,124 @@
+{
+  "id": "fr-02-rapport-bailleur",
+  "language": "fr",
+  "synthetic": true,
+  "clean": true,
+  "title": "Rapport trimestriel au bailleur (résumé correct)",
+  "kitRef": "case-studies/03-donor-report-draft",
+  "documents": [
+    {
+      "id": "annexe",
+      "type": "project_annex",
+      "title": "Annexe A : résultats T1 (SYNTHÉTIQUE)",
+      "synthetic": true,
+      "content": "Résultats T1 : 1 240 kits d'hygiène distribués dans la côte Halcyon entre janvier et mars 2026. Partenaire : Coopérative Meridia. Aucun transfert monétaire au T1. Distribution limitée aux ménages enregistrés."
+    }
+  ],
+  "summary": "Au T1 2026, le projet a livré 1 240 kits d'hygiène dans la côte Halcyon avec l'Coopérative Meridia. Aucun transfert monétaire n'a eu lieu au T1. La distribution visait uniquement les ménages enregistrés.",
+  "claims": [
+    {
+      "id": "c1",
+      "text": "1 240 kits d'hygiène ont été distribués dans la côte Halcyon au T1 2026.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "annexe:s0"
+        ],
+        "explanation": "Correspond à l'annexe.",
+        "evidence": "1 240"
+      }
+    },
+    {
+      "id": "c2",
+      "text": "L'Coopérative Meridia était le partenaire de distribution.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "annexe:s1"
+        ],
+        "explanation": "Partenaire nommé dans l'annexe.",
+        "evidence": "Meridia"
+      }
+    },
+    {
+      "id": "c3",
+      "text": "Aucun transfert monétaire n'a eu lieu au T1.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "annexe:s2"
+        ],
+        "explanation": "Explicite dans la source.",
+        "evidence": "Aucun transfert"
+      }
+    },
+    {
+      "id": "c4",
+      "text": "La distribution visait uniquement les ménages enregistrés.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "annexe:s3"
+        ],
+        "explanation": "Énoncé dans l'annexe.",
+        "evidence": "ménages enregistrés"
+      }
+    },
+    {
+      "id": "c5",
+      "text": "La distribution s'est déroulée de janvier à mars 2026.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "annexe:s0"
+        ],
+        "explanation": "Période T1 confirmée.",
+        "evidence": "janvier"
+      }
+    },
+    {
+      "id": "c6",
+      "text": "Les kits ont été distribués dans la côte Halcyon.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "annexe:s0"
+        ],
+        "explanation": "Région confirmée.",
+        "evidence": "Halcyon"
+      }
+    },
+    {
+      "id": "c7",
+      "text": "Le projet a rapporté les résultats du T1.",
+      "answerKey": {
+        "verdict": "partly_supported",
+        "errorType": null,
+        "sourceSentences": [
+          "annexe:s0"
+        ],
+        "explanation": "Résultats T1 listés; formulation du résumé implicite.",
+        "evidence": "T1"
+      }
+    },
+    {
+      "id": "c8",
+      "text": "Les transferts monétaires n'étaient pas prévus au T1.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "annexe:s2"
+        ],
+        "explanation": "Paraphrase de aucun transfert monétaire.",
+        "evidence": "transfert"
+      }
+    }
+  ]
+}

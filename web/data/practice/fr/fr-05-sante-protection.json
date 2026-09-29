@@ -1,0 +1,127 @@
+{
+  "id": "fr-05-sante-protection",
+  "language": "fr",
+  "synthetic": true,
+  "title": "Note de poste de santé et réunion partenaires",
+  "kitRef": "case-studies/04-protection-case-note",
+  "documents": [
+    {
+      "id": "sante",
+      "type": "health_post_note",
+      "title": "Note hebdomadaire poste de santé (SYNTHÉTIQUE)",
+      "synthetic": true,
+      "content": "Semaine du 10 juin 2026 : le poste de santé du Torvale a enregistré 45 consultations pour infection respiratoire aiguë chez les enfants de moins de cinq ans. Une orientation vers l'hôpital de district. Rupture de stock de sirop d'amoxicilline notée le 14 juin."
+    },
+    {
+      "id": "reunion",
+      "type": "partner_meeting_notes",
+      "title": "Notes de coordination partenaires (SYNTHÉTIQUE)",
+      "synthetic": true,
+      "content": "Groupe de travail protection, 12 juin 2026 : l'Collectif Haven a indiqué que les espaces sûrs du Torvale restent ouverts trois jours par semaine. L'Ligue Secours Frontière a signalé une évaluation en attente pour le Ashford uniquement."
+    }
+  ],
+  "summary": "La semaine du 10 juin 2026, le poste du Torvale a vu 45 consultations IRA pédiatriques avec plusieurs orientations hospitalières. L'Collectif Haven a déclaré que « tous les espaces sûrs sont ouverts quotidiennement dans tout le district ». Le sirop d'amoxicilline était disponible toute la semaine.",
+  "claims": [
+    {
+      "id": "c1",
+      "text": "Le poste du Torvale a enregistré 45 consultations IRA pédiatriques.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "sante:s0"
+        ],
+        "explanation": "Correspond à la note de santé.",
+        "evidence": "45"
+      }
+    },
+    {
+      "id": "c2",
+      "text": "Il y a eu plusieurs orientations hospitalières.",
+      "answerKey": {
+        "verdict": "contradicted",
+        "errorType": "wrong_number",
+        "sourceSentences": [
+          "sante:s1"
+        ],
+        "explanation": "Une seule orientation selon la source.",
+        "evidence": "Une orientation"
+      }
+    },
+    {
+      "id": "c3",
+      "text": "L'Collectif Haven a déclaré que tous les espaces sûrs sont ouverts quotidiennement dans tout le district.",
+      "answerKey": {
+        "verdict": "contradicted",
+        "errorType": "invented_quotation",
+        "sourceSentences": [
+          "reunion:s0"
+        ],
+        "explanation": "Citation et portée inventées; source dit trois jours par semaine au Torvale.",
+        "evidence": "trois jours"
+      }
+    },
+    {
+      "id": "c4",
+      "text": "Les espaces sûrs du Torvale sont ouverts trois jours par semaine.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "reunion:s0"
+        ],
+        "explanation": "Correspond aux notes.",
+        "evidence": "trois jours"
+      }
+    },
+    {
+      "id": "c5",
+      "text": "Le sirop d'amoxicilline était disponible toute la semaine.",
+      "answerKey": {
+        "verdict": "contradicted",
+        "errorType": "contradiction",
+        "sourceSentences": [
+          "sante:s2"
+        ],
+        "explanation": "Rupture de stock le 14 juin.",
+        "evidence": "Rupture"
+      }
+    },
+    {
+      "id": "c6",
+      "text": "L'Ligue Secours Frontière évalue le Ashford.",
+      "answerKey": {
+        "verdict": "partly_supported",
+        "errorType": null,
+        "sourceSentences": [
+          "reunion:s1"
+        ],
+        "explanation": "Évaluation en attente signalée.",
+        "evidence": "Ashford"
+      }
+    },
+    {
+      "id": "c7",
+      "text": "Les espaces sûrs couvrent tous les villages du district.",
+      "answerKey": {
+        "verdict": "not_in_source",
+        "errorType": "overgeneralization",
+        "sourceSentences": [],
+        "explanation": "Seuls les villages K et L sont mentionnés."
+      }
+    },
+    {
+      "id": "c8",
+      "text": "Une rupture de stock d'amoxicilline a eu lieu le 14 juin.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "sante:s2"
+        ],
+        "explanation": "Énoncé directement.",
+        "evidence": "14 juin"
+      }
+    }
+  ]
+}

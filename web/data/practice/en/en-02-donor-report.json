@@ -1,0 +1,124 @@
+{
+  "id": "en-02-donor-report",
+  "language": "en",
+  "synthetic": true,
+  "clean": true,
+  "title": "Quarterly donor narrative (clean summary)",
+  "kitRef": "case-studies/03-donor-report-draft",
+  "documents": [
+    {
+      "id": "annex",
+      "type": "project_annex",
+      "title": "Annex A: Q1 outputs (SYNTHETIC)",
+      "synthetic": true,
+      "content": "Q1 outputs: 1,240 hygiene kits distributed in Halcyon Coast between January and March 2026. Partner: Meridia Relief Cooperative. No cash transfers in Q1. Distribution targeted registered households only."
+    }
+  ],
+  "summary": "In Q1 2026, the project delivered 1,240 hygiene kits in Halcyon Coast through Meridia Relief Cooperative. No cash transfers occurred in Q1. Distribution targeted registered households only.",
+  "claims": [
+    {
+      "id": "c1",
+      "text": "1,240 hygiene kits were distributed in Halcyon Coast in Q1 2026.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "annex:s0"
+        ],
+        "explanation": "Matches Annex A output figure and region.",
+        "evidence": "1,240"
+      }
+    },
+    {
+      "id": "c2",
+      "text": "Meridia Relief Cooperative was the distribution partner.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "annex:s1"
+        ],
+        "explanation": "Partner name matches annex.",
+        "evidence": "Cooperative"
+      }
+    },
+    {
+      "id": "c3",
+      "text": "No cash transfers occurred in Q1.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "annex:s2"
+        ],
+        "explanation": "Explicit in source.",
+        "evidence": "No cash"
+      }
+    },
+    {
+      "id": "c4",
+      "text": "Distribution targeted registered households only.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "annex:s3"
+        ],
+        "explanation": "Directly stated in annex.",
+        "evidence": "registered households"
+      }
+    },
+    {
+      "id": "c5",
+      "text": "Distribution ran from January through March 2026.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "annex:s0"
+        ],
+        "explanation": "Q1 timing matches source.",
+        "evidence": "January"
+      }
+    },
+    {
+      "id": "c6",
+      "text": "Hygiene kits were distributed in Halcyon Coast.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "annex:s0"
+        ],
+        "explanation": "Region named in annex.",
+        "evidence": "Halcyon"
+      }
+    },
+    {
+      "id": "c7",
+      "text": "The project reported Q1 outputs in Annex A.",
+      "answerKey": {
+        "verdict": "partly_supported",
+        "errorType": null,
+        "sourceSentences": [
+          "annex:s0"
+        ],
+        "explanation": "Annex A format implied; outputs listed.",
+        "evidence": "Q1"
+      }
+    },
+    {
+      "id": "c8",
+      "text": "Cash transfers were not part of Q1 activities.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "annex:s2"
+        ],
+        "explanation": "Paraphrase of no cash transfers.",
+        "evidence": "No cash"
+      }
+    }
+  ]
+}

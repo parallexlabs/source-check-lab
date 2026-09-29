@@ -1,0 +1,111 @@
+{
+  "id": "fr-04-distribution",
+  "language": "fr",
+  "synthetic": true,
+  "title": "Revue du registre de distribution alimentaire",
+  "kitRef": "session-02-verified-work",
+  "documents": [
+    {
+      "id": "registre",
+      "type": "distribution_log",
+      "title": "Registre de distribution : Secteur 7 (SYNTHÉTIQUE)",
+      "synthetic": true,
+      "content": "15 août 2026 : 850 cartes de ration ménage vérifiées. 820 colis alimentaires ménage distribués au site Greybrook. Ration moyenne : 25 kg de riz par ménage par mois. Le personnel partenaire a noté que 30 cartes n'ont pas pu être vérifiées faute de pièce d'identité."
+    }
+  ],
+  "summary": "Le 15 août 2026, 820 colis ont été remis à 820 personnes au site Greybrook. Chaque personne a reçu 25 kg de riz par semaine. Toutes les cartes de ration ont été vérifiées avec succès.",
+  "claims": [
+    {
+      "id": "c1",
+      "text": "820 colis ont été distribués au site Greybrook le 15 août 2026.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "registre:s1"
+        ],
+        "explanation": "Date, site et quantité correspondent.",
+        "evidence": "820"
+      }
+    },
+    {
+      "id": "c2",
+      "text": "Les colis ont été remis à 820 personnes.",
+      "answerKey": {
+        "verdict": "contradicted",
+        "errorType": "unit_confusion",
+        "sourceSentences": [
+          "registre:s1"
+        ],
+        "explanation": "Le registre compte des ménages, pas des personnes.",
+        "evidence": "ménage"
+      }
+    },
+    {
+      "id": "c3",
+      "text": "Chaque personne a reçu 25 kg de riz par semaine.",
+      "answerKey": {
+        "verdict": "contradicted",
+        "errorType": "unit_confusion",
+        "sourceSentences": [
+          "registre:s2"
+        ],
+        "explanation": "25 kg par ménage par mois selon la source.",
+        "evidence": "par mois"
+      }
+    },
+    {
+      "id": "c4",
+      "text": "850 cartes de ration ménage ont été vérifiées.",
+      "answerKey": {
+        "verdict": "partly_supported",
+        "errorType": null,
+        "sourceSentences": [
+          "registre:s0",
+          "registre:s3"
+        ],
+        "explanation": "850 vérifiées oui; 30 non vérifiées omis.",
+        "evidence": "850"
+      }
+    },
+    {
+      "id": "c5",
+      "text": "Toutes les cartes ont été vérifiées avec succès.",
+      "answerKey": {
+        "verdict": "contradicted",
+        "errorType": "omitted_caveat",
+        "sourceSentences": [
+          "registre:s3"
+        ],
+        "explanation": "30 cartes non vérifiées selon la source.",
+        "evidence": "30 cartes"
+      }
+    },
+    {
+      "id": "c6",
+      "text": "La distribution a eu lieu au site Greybrook.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "registre:s1"
+        ],
+        "explanation": "Site confirmé.",
+        "evidence": "Greybrook"
+      }
+    },
+    {
+      "id": "c7",
+      "text": "La ration moyenne était de 25 kg de riz par ménage et par mois.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "registre:s2"
+        ],
+        "explanation": "Paraphrase exacte.",
+        "evidence": "25 kg"
+      }
+    }
+  ]
+}

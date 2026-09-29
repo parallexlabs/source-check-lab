@@ -1,0 +1,121 @@
+{
+  "id": "fr-01-evaluation-besoins",
+  "language": "fr",
+  "synthetic": true,
+  "title": "Synthèse d'évaluation rapide des besoins",
+  "kitRef": "case-studies/02-needs-assessment-statistic",
+  "documents": [
+    {
+      "id": "era",
+      "type": "rapid_needs_assessment",
+      "title": "Extrait ERA : Meridia Vale (SYNTHÉTIQUE)",
+      "synthetic": true,
+      "content": "Dans le district Meridia Vale, 412 ménages ont été enquêtés dans 6 villages entre le 4 et le 18 mars 2026. 31 % ont signalé un accès insuffisant à l'eau pendant la saison sèche. L'enquête n'estime pas la prévalence à l'échelle du district. Certaines équipes ont noté que des forages pourraient nécessiter des réparations avant la prochaine saison sèche."
+    }
+  ],
+  "summary": "Environ 78 % des ménages du district Meridia Vale manquent d'eau potable fiable, ce qui indique des lacunes WASH graves nécessitant une montée en charge urgente. L'évaluation a couvert 412 ménages dans 6 villages en mars 2026.",
+  "claims": [
+    {
+      "id": "c1",
+      "text": "Environ 78 % des ménages manquent d'eau potable fiable.",
+      "answerKey": {
+        "verdict": "contradicted",
+        "errorType": "wrong_number",
+        "sourceSentences": [
+          "era:s1"
+        ],
+        "explanation": "La source indique 31 %, pas 78 %.",
+        "evidence": "31"
+      }
+    },
+    {
+      "id": "c2",
+      "text": "412 ménages dans 6 villages ont été couverts en mars 2026.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "era:s0"
+        ],
+        "explanation": "Correspond à la portée de l'enquête.",
+        "evidence": "412"
+      }
+    },
+    {
+      "id": "c3",
+      "text": "Des lacunes WASH graves exigent une montée en charge urgente.",
+      "answerKey": {
+        "verdict": "not_in_source",
+        "errorType": "not_in_source",
+        "sourceSentences": [],
+        "explanation": "Langage d'urgence absent de la source."
+      }
+    },
+    {
+      "id": "c4",
+      "text": "L'enquête estime la prévalence à l'échelle du district.",
+      "answerKey": {
+        "verdict": "contradicted",
+        "errorType": "contradiction",
+        "sourceSentences": [
+          "era:s2"
+        ],
+        "explanation": "La source dit explicitement le contraire.",
+        "evidence": "n'estime pas"
+      }
+    },
+    {
+      "id": "c5",
+      "text": "31 % ont signalé un accès insuffisant à l'eau en saison sèche.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "era:s1"
+        ],
+        "explanation": "Chiffre exact de la source.",
+        "evidence": "31"
+      }
+    },
+    {
+      "id": "c6",
+      "text": "Tous les forages seront réparés avant la saison sèche.",
+      "answerKey": {
+        "verdict": "contradicted",
+        "errorType": "lost_uncertainty",
+        "sourceSentences": [
+          "era:s0",
+          "era:s3"
+        ],
+        "explanation": "La source dit que certains pourraient nécessiter des réparations.",
+        "evidence": "pourraient"
+      }
+    },
+    {
+      "id": "c7",
+      "text": "L'enquête a couvert six villages.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "era:s0"
+        ],
+        "explanation": "Confirmé dans la source."
+      }
+    },
+    {
+      "id": "c8",
+      "text": "L'accès à l'eau est adéquat pour la plupart des ménages toute l'année.",
+      "answerKey": {
+        "verdict": "contradicted",
+        "errorType": "overgeneralization",
+        "sourceSentences": [
+          "era:s1",
+          "era:s2"
+        ],
+        "explanation": "La source limite aux constats de saison sèche.",
+        "evidence": "saison sèche"
+      }
+    }
+  ]
+}

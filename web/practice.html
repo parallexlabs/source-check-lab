@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://cdn.jsdelivr.net/npm/@huggingface/transformers@4.3.0/ 'wasm-unsafe-eval'; worker-src 'self' blob: https://cdn.jsdelivr.net/npm/@huggingface/transformers@4.3.0/; connect-src 'self' https://cdn.jsdelivr.net/npm/@huggingface/transformers@4.3.0/ https://cdn.jsdelivr.net/npm/onnxruntime-web@1.31.0-dev.20260914-8d85527a0/ https://huggingface.co https://cdn-lfs.hf.co https://cas-bridge.xethub.hf.co; img-src 'self' data:; style-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none';">
+  <title>Practice | Source Check Lab</title>
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body data-page-title-key="practice_title">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <strong data-i18n="site_title">Source Check Lab</strong>
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+          <li><a href="practice.html" aria-current="page" data-i18n="nav_practice">Practice</a></li>
+          <li><a href="own.html" data-i18n="nav_own">Check my own</a></li>
+          <li><a href="guide.html" data-i18n="nav_guide">What to look for</a></li>
+          <li><a href="facilitator.html" data-i18n="nav_facilitator">Facilitator</a></li>
+          <li><button type="button" id="lang-switch" class="lang-switch" data-i18n-aria="lang_switch_aria">FR</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <div class="synthetic-banner" role="note"><strong data-i18n="synthetic_notice"></strong></div>
+    <h1 data-i18n="practice_title">Practice mode</h1>
+    <p class="notice" data-i18n="keyboard_help"></p>
+    <div class="form-field">
+      <label for="set-select" data-i18n="practice_select_set">Choose a practice set</label>
+      <select id="set-select" name="set"></select>
+    </div>
+    <button type="button" class="btn" id="start-set" data-i18n="practice_start">Start set</button>
+    <div id="practice-workspace" hidden>
+      <div class="practice-layout">
+        <section class="panel" id="source-panel" data-i18n-panel="practice_panel_sources"></section>
+        <section class="panel" id="claims-panel" data-i18n-panel="practice_panel_claims"></section>
+      </div>
+      <button type="button" class="btn" id="check-answers" data-i18n="practice_check_answers">Check my answers</button>
+      <div id="results-panel" class="results-panel" hidden aria-live="polite"></div>
+    </div>
+    <p id="empty-hint" data-i18n="empty_state">Select a practice set to begin.</p>
+  </main>
+  <footer class="site-footer"><div class="site-footer__inner"><p>© 2026 ParalleX Labs Inc.</p><p class="footer-disclaimer" data-i18n="fr_disclaimer_footer"></p></div></footer>
+  <div id="live-region" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+  <script type="module" src="js/ui/practice-page.js"></script>
+</body>
+</html>

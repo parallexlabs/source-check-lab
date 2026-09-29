@@ -1,0 +1,113 @@
+{
+  "generatedAt": "2026-09-29",
+  "mode": "with-model",
+  "practiceSets": 14,
+  "claims": {
+    "n": 110,
+    "uniqueClaims": 110
+  },
+  "deterministic": {
+    "n": 110,
+    "uniqueClaims": 110,
+    "precisionPct": 62.5,
+    "recallPct": 52.1,
+    "tp": 25,
+    "fp": 15,
+    "fn": 23,
+    "byErrorType": [
+      {
+        "errorType": "wrong_number",
+        "n": 6,
+        "recallPct": 66.7,
+        "tp": 4,
+        "fn": 2
+      },
+      {
+        "errorType": "not_in_source",
+        "n": 4,
+        "recallPct": 0,
+        "tp": 0,
+        "fn": 4
+      },
+      {
+        "errorType": "contradiction",
+        "n": 6,
+        "recallPct": 66.7,
+        "tp": 4,
+        "fn": 2
+      },
+      {
+        "errorType": "lost_uncertainty",
+        "n": 4,
+        "recallPct": 50,
+        "tp": 2,
+        "fn": 2
+      },
+      {
+        "errorType": "overgeneralization",
+        "n": 4,
+        "recallPct": 0,
+        "tp": 0,
+        "fn": 4
+      },
+      {
+        "errorType": "sources_disagree",
+        "n": 2,
+        "recallPct": 0,
+        "tp": 0,
+        "fn": 2
+      },
+      {
+        "errorType": "wrong_date_time",
+        "n": 4,
+        "recallPct": 100,
+        "tp": 4,
+        "fn": 0
+      },
+      {
+        "errorType": "unit_confusion",
+        "n": 6,
+        "recallPct": 100,
+        "tp": 6,
+        "fn": 0
+      },
+      {
+        "errorType": "invented_quotation",
+        "n": 4,
+        "recallPct": 50,
+        "tp": 2,
+        "fn": 2
+      },
+      {
+        "errorType": "omitted_caveat",
+        "n": 4,
+        "recallPct": 0,
+        "tp": 0,
+        "fn": 4
+      },
+      {
+        "errorType": "wrong_place_actor",
+        "n": 4,
+        "recallPct": 75,
+        "tp": 3,
+        "fn": 1
+      }
+    ]
+  },
+  "embedding": {
+    "n": 110,
+    "uniqueClaims": 110,
+    "top2Recall": 89.1,
+    "top2Hit": 98,
+    "model": "Xenova/multilingual-e5-small",
+    "revision": "761b726dd34fb83930e26aab4e9ac3899aa1fa78"
+  },
+  "nli": {
+    "n": 102,
+    "uniqueClaims": 102,
+    "agreementPct": 51,
+    "agree": 52,
+    "model": "Xenova/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
+    "revision": "0864ced79bf1ef851bfaf9dd9de0aa54d735d9d0"
+  }
+}

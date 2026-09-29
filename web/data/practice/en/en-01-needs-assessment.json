@@ -1,0 +1,121 @@
+{
+  "id": "en-01-needs-assessment",
+  "language": "en",
+  "synthetic": true,
+  "title": "Rapid needs assessment summary",
+  "kitRef": "case-studies/02-needs-assessment-statistic",
+  "documents": [
+    {
+      "id": "rna",
+      "type": "rapid_needs_assessment",
+      "title": "RNA excerpt: Meridia Vale (SYNTHETIC)",
+      "synthetic": true,
+      "content": "In Meridia Vale, 412 households were surveyed across 6 villages between 4 and 18 March 2026. 31% reported inadequate water access during the dry season. The survey does not estimate district-wide prevalence. Field teams noted that some boreholes may need repair before the next dry season."
+    }
+  ],
+  "summary": "Approximately 78% of households in Meridia Vale lack reliable clean water, indicating severe WASH gaps requiring urgent scale-up. The assessment covered 412 households in 6 villages in March 2026.",
+  "claims": [
+    {
+      "id": "c1",
+      "text": "Approximately 78% of households in Meridia Vale lack reliable clean water.",
+      "answerKey": {
+        "verdict": "contradicted",
+        "errorType": "wrong_number",
+        "sourceSentences": [
+          "rna:s1"
+        ],
+        "explanation": "Source reports 31% inadequate water in dry season, not 78%.",
+        "evidence": "31%"
+      }
+    },
+    {
+      "id": "c2",
+      "text": "The assessment covered 412 households in 6 villages in March 2026.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "rna:s0"
+        ],
+        "explanation": "Matches the survey scope in the source.",
+        "evidence": "412"
+      }
+    },
+    {
+      "id": "c3",
+      "text": "Severe WASH gaps require urgent scale-up across the district.",
+      "answerKey": {
+        "verdict": "not_in_source",
+        "errorType": "not_in_source",
+        "sourceSentences": [],
+        "explanation": "Subjective escalation; source does not use severe or urgent language."
+      }
+    },
+    {
+      "id": "c4",
+      "text": "The survey estimates district-wide water prevalence.",
+      "answerKey": {
+        "verdict": "contradicted",
+        "errorType": "contradiction",
+        "sourceSentences": [
+          "rna:s2"
+        ],
+        "explanation": "Source explicitly says it does not estimate district-wide prevalence.",
+        "evidence": "does not estimate"
+      }
+    },
+    {
+      "id": "c5",
+      "text": "31% reported inadequate water access during the dry season.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "rna:s1"
+        ],
+        "explanation": "Direct match to source figure.",
+        "evidence": "31%"
+      }
+    },
+    {
+      "id": "c6",
+      "text": "All boreholes in Meridia Vale will be repaired before the dry season.",
+      "answerKey": {
+        "verdict": "contradicted",
+        "errorType": "lost_uncertainty",
+        "sourceSentences": [
+          "rna:s0",
+          "rna:s3"
+        ],
+        "explanation": "Source says some boreholes may need repair, not that all will be repaired.",
+        "evidence": "may need repair"
+      }
+    },
+    {
+      "id": "c7",
+      "text": "Field teams conducted the survey in six villages.",
+      "answerKey": {
+        "verdict": "partly_supported",
+        "errorType": null,
+        "sourceSentences": [
+          "rna:s0"
+        ],
+        "explanation": "Six villages confirmed; who conducted is implied but not named."
+      }
+    },
+    {
+      "id": "c8",
+      "text": "Clean water access is adequate for most households year-round.",
+      "answerKey": {
+        "verdict": "contradicted",
+        "errorType": "overgeneralization",
+        "sourceSentences": [
+          "rna:s1",
+          "rna:s2"
+        ],
+        "explanation": "Source limits findings to dry season and does not claim year-round adequacy.",
+        "evidence": "dry season"
+      }
+    }
+  ]
+}

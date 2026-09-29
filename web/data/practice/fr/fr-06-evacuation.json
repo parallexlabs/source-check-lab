@@ -1,0 +1,110 @@
+{
+  "id": "fr-06-evacuation",
+  "language": "fr",
+  "synthetic": true,
+  "title": "Mise à jour coordination évacuation",
+  "kitRef": "case-studies/01-evacuation-sms-translation",
+  "documents": [
+    {
+      "id": "ops",
+      "type": "situation_report",
+      "title": "Mise à jour cellule opérations (SYNTHÉTIQUE)",
+      "synthetic": true,
+      "content": "14 h 00 le 5 mai 2026 : les bus d'évacuation ont quitté le camp Sycamore pour le centre de transit Northhaven. 612 passagers embarqués sur 6 bus. Capacité du centre de transit Northhaven : 800 places. Texte d'alerte SMS approuvé en anglais et en français; la traduction des détails d'itinéraire est en attente de vérification par des volontaires communautaires."
+    }
+  ],
+  "summary": "À 15 h 00 le 5 mai 2026, 612 personnes ont embarqué sur 6 bus du camp Sycamore vers le centre de transit Southhaven. Le centre de transit a une capacité de 800 personnes. Les traductions SMS en français ont été vérifiées avant envoi.",
+  "claims": [
+    {
+      "id": "c1",
+      "text": "612 personnes ont embarqué sur 6 bus depuis le camp Sycamore.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "ops:s1"
+        ],
+        "explanation": "Effectifs et bus correspondent.",
+        "evidence": "612"
+      }
+    },
+    {
+      "id": "c2",
+      "text": "Le départ était à 15 h 00 le 5 mai 2026.",
+      "answerKey": {
+        "verdict": "contradicted",
+        "errorType": "wrong_date_time",
+        "sourceSentences": [
+          "ops:s0"
+        ],
+        "explanation": "La source indique 14 h 00.",
+        "evidence": "14 h"
+      }
+    },
+    {
+      "id": "c3",
+      "text": "Les bus sont allés au centre de transit Southhaven.",
+      "answerKey": {
+        "verdict": "contradicted",
+        "errorType": "wrong_place_actor",
+        "sourceSentences": [
+          "ops:s0"
+        ],
+        "explanation": "Destination : centre de transit Northhaven.",
+        "evidence": "Northhaven"
+      }
+    },
+    {
+      "id": "c4",
+      "text": "La capacité du centre de transit est de 800 places.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "ops:s2"
+        ],
+        "explanation": "Chiffre confirmé.",
+        "evidence": "800"
+      }
+    },
+    {
+      "id": "c5",
+      "text": "Les traductions SMS en français ont été vérifiées avant envoi.",
+      "answerKey": {
+        "verdict": "contradicted",
+        "errorType": "omitted_caveat",
+        "sourceSentences": [
+          "ops:s3"
+        ],
+        "explanation": "Traduction en attente de vérification.",
+        "evidence": "en attente"
+      }
+    },
+    {
+      "id": "c6",
+      "text": "L'évacuation a utilisé six bus.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "ops:s1"
+        ],
+        "explanation": "Nombre de bus confirmé.",
+        "evidence": "6 bus"
+      }
+    },
+    {
+      "id": "c7",
+      "text": "Les alertes SMS ont été approuvées en anglais et en français.",
+      "answerKey": {
+        "verdict": "partly_supported",
+        "errorType": null,
+        "sourceSentences": [
+          "ops:s3"
+        ],
+        "explanation": "Langues mentionnées; itinéraire encore en attente.",
+        "evidence": "anglais et en français"
+      }
+    }
+  ]
+}

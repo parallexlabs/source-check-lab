@@ -1,0 +1,124 @@
+{
+  "id": "en-07-cross-fr",
+  "language": "en",
+  "synthetic": true,
+  "crossLanguage": {
+    "sourceLang": "fr",
+    "summaryLang": "en"
+  },
+  "title": "French source with English summary",
+  "kitRef": "session-02-verified-work",
+  "documents": [
+    {
+      "id": "note",
+      "type": "cluster_update",
+      "title": "Note cluster nutrition : Meridia Vale (SYNTHÉTIQUE)",
+      "synthetic": true,
+      "content": "Semaine du 3 août 2026 : le cluster nutrition a enregistré 186 admissions pour malnutrition aiguë modérée dans le district Meridia Vale. Les admissions concernent des enfants de moins de cinq ans uniquement. Les stocks de plumpy nut restent limités; une livraison est prévue d'ici le 15 août."
+    }
+  ],
+  "summary": "In the week of 3 August 2026, the nutrition cluster recorded 186 admissions for moderate acute malnutrition in Meridia Vale District. Admissions were for children under five only. Plumpy nut stocks remain limited; a delivery is expected by 15 August.",
+  "claims": [
+    {
+      "id": "c1",
+      "text": "186 admissions for moderate acute malnutrition were recorded in Meridia Vale District.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "note:s0"
+        ],
+        "explanation": "Figure and district match the French source.",
+        "evidence": "186"
+      }
+    },
+    {
+      "id": "c2",
+      "text": "Admissions were for children under five only.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "note:s1"
+        ],
+        "explanation": "Age group matches source.",
+        "evidence": "cinq ans"
+      }
+    },
+    {
+      "id": "c3",
+      "text": "Plumpy nut stocks remain limited.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "note:s2"
+        ],
+        "explanation": "Stock status matches.",
+        "evidence": "limités"
+      }
+    },
+    {
+      "id": "c4",
+      "text": "A delivery is expected by 15 August.",
+      "answerKey": {
+        "verdict": "partly_supported",
+        "errorType": null,
+        "sourceSentences": [
+          "note:s2"
+        ],
+        "explanation": "Delivery prévue; timing matches but cross-language paraphrase.",
+        "evidence": "15 août"
+      }
+    },
+    {
+      "id": "c5",
+      "text": "The nutrition cluster reported 286 admissions.",
+      "answerKey": {
+        "verdict": "contradicted",
+        "errorType": "wrong_number",
+        "sourceSentences": [
+          "note:s0"
+        ],
+        "explanation": "Source states 186, not 286.",
+        "evidence": "186"
+      }
+    },
+    {
+      "id": "c6",
+      "text": "Severe acute malnutrition cases require urgent therapeutic feeding.",
+      "answerKey": {
+        "verdict": "not_in_source",
+        "errorType": "not_in_source",
+        "sourceSentences": [],
+        "explanation": "Source mentions moderate acute malnutrition only; severe cases not discussed."
+      }
+    },
+    {
+      "id": "c7",
+      "text": "The report covers Fictif Province rather than Meridia Vale District.",
+      "answerKey": {
+        "verdict": "contradicted",
+        "errorType": "wrong_place_actor",
+        "sourceSentences": [
+          "note:s0"
+        ],
+        "explanation": "Source names district Meridia Vale, not province.",
+        "evidence": "district"
+      }
+    },
+    {
+      "id": "c8",
+      "text": "The report covers the week of 3 August 2026.",
+      "answerKey": {
+        "verdict": "supported",
+        "errorType": null,
+        "sourceSentences": [
+          "note:s0"
+        ],
+        "explanation": "Week matches source.",
+        "evidence": "3 août"
+      }
+    }
+  ]
+}

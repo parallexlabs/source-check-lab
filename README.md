@@ -1,3 +1,10 @@
+<p align="center" class="brand-mark">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset=".github/brand/parallex-mark-dark.png">
+    <img src=".github/brand/parallex-mark.png" alt="ParalleX Labs" width="120">
+  </picture>
+</p>
+
 # Source Check Lab
 
 Source Check Lab is a bilingual (English and French) practice lab for Session 2 (verified work by role) of the [Humanitarian AI Training Kit](https://parallexlabs.github.io/humanitarian-ai-training-kit/). Humanitarian staff practise checking an AI-written summary against its sources, claim by claim: they commit a verdict and mark the evidence first, and only then can they see optional hints that run on their own device.

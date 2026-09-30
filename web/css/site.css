@@ -647,3 +647,8 @@ html[lang="fr"] .fr-disclaimer-prominent {
     break-inside: avoid;
   }
 }
+
+/* Company mark in the site header */
+.brand-lockup { display: inline-flex; align-items: center; gap: 0.6rem; }
+.brand-lockup h1 { margin: 0; }
+.brand-mark, .brand-mark img { display: block; width: 36px; height: 36px; flex: 0 0 auto; }

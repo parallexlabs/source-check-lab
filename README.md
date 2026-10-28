@@ -74,7 +74,7 @@ See [facilitator guide](web/facilitator.html) (20 to 25 minutes) with printable 
 
 ## Languages
 
-English and French interface (`web/i18n/`). French prepared with machine assistance; not yet reviewed by a professional translator. Two practice sets pair a French source with an English summary (or the reverse); hints are weaker across languages.
+English and French interface (`web/i18n/`). French not yet reviewed by a professional translator. Two practice sets pair a French source with an English summary (or the reverse); hints are weaker across languages.
 
 ## Related ParalleX work
 
